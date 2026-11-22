@@ -1,0 +1,8 @@
+package com.fleetflow.backend;
+
+public class VehicleNotFoundException extends RuntimeException {
+
+    public VehicleNotFoundException(Long id) {
+        super("Vehicle not found with ID: " + id);
+    }
+}
